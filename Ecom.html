@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ol{
+            display: none
+        }
+        h2{
+            display: none;
+        }
+        body{
+            margin-left: 20px;
+            margin-right: 20px;
+           
+        }
+        ul{
+           list-style-type: none ;
+           display: inline-block; 
+        }
+        li{
+            display: inline-block; 
+            color: rebeccapurple;
+            height:  100%;
+            font-size: 30px;
+            padding-right: 40px;
+            text-align: center;
+            transition: 2s;
+        }
+        input{
+            font-weight: bold;
+            background-color: rgba(255, 255, 255, 0.1);
+            border: none;
+           color: rgba(255, 255, 255, 0.4);
+            width: 20rem;
+            font-size: 30px;
+            padding-top: 20px;
+            height: 60%;
+            float: right;
+            border-radius: 10%;
+        }
+        li:hover{
+            background-color: mediumpurple;
+        }
+        .container{
+            display: grid;
+            grid-template: auto 400px 400px 20px/ repeat(12,1fr);
+        }
+        .header{
+           background-color: cadetblue; 
+           grid-column: 1/-1;
+        }
+        .item1 p,.item2 p,.item3 p,.item4 p,.item5 p,.item6 p{
+            font-size: 20px;
+            font-weight: bold;
+            color : blueviolet
+            
+        }
+        .footer{
+            background-color: cadetblue; 
+            grid-column: 1/-1;
+        }
+        .item1{
+            background-color: honeydew;
+            grid-column: 1/5;
+        }
+        .item2{
+            background-color: honeydew;
+            grid-column: 5/9;
+        }
+        .item3{
+            background-color: honeydew;
+            grid-column: 9/13;
+        }
+        .item4{
+            background-color: honeydew;
+            grid-column: 1/5;
+        }
+        .item5{
+            background-color: honeydew;
+            grid-column: 5/9;
+        }
+        .item6{
+            background-color: honeydew;
+            grid-column: 9/13;
+        }
+       .item1 > img{
+           
+            background-color: blanchedalmond;
+            transition: 2s;
+        }
+        .item1:hover{
+            transform: rotate(7deg);
+        }
+        .item2 > img{
+          
+            background-color: blanchedalmond;
+            transition: 2s;
+        }
+        .item2:hover{
+            transform: rotate(7deg);
+        }
+        .item3 > img{
+           
+            background-color: blanchedalmond;
+            transition: 2s;
+        }
+        .item3:hover{
+            transform: rotate(7deg);
+        }
+        .item4 > img{
+           
+            background-color: blanchedalmond;
+            transition: 2s;
+        }
+        .item4:hover{
+            transform: rotate(7deg);
+        }
+        .item5 > img{
+           
+            background-color: blanchedalmond;
+            transition: 2s;
+        }
+        .item5:hover{
+            transform: rotate(7deg);
+        }
+        .item6 > img{
+           
+            background-color: blanchedalmond;
+            transition: 2s;
+        }
+        .item6:hover{
+            transform: rotate(7deg);
+        }
+        img{
+            width: 20rem;
+            height: 20rem;
+        }
+        /*@media screen and (max-width: 900px){
+            .item1{
+            background-color: honeydew;
+            grid-column: 1/7;
+            }
+        .item2{
+            background-color: honeydew;
+            grid-column: 7/13;
+            }
+        .item3{
+            background-color: honeydew;
+            grid-column: 1/7;
+            }
+        .item4{
+            background-color: honeydew;
+            grid-column: 7/13;
+        }
+        .item5{
+            background-color: honeydew;
+            grid-column: 1/7;
+        }
+        .item6{
+            background-color: honeydew;
+            grid-column: 7/13;
+        }
+        }
+        @media screen and (max-width: 640px){
+            .item1{
+            background-color: honeydew;
+            grid-column: 1/-1;
+            }
+        .item2{
+            background-color: honeydew;
+            grid-column: 1/-1;
+            }
+        .item3{
+            background-color: honeydew;
+            grid-column: 1/-1;
+            }
+        .item4{
+            background-color: honeydew;
+            grid-column: 1/-1;
+        }
+        .item5{
+            background-color: honeydew;
+            grid-column: 1/-1;
+        }
+        .item6{
+            background-color: honeydew;
+            grid-column: 1/-1;
+        }
+        }
+        @media screen and (max-width: 1000px){
+            input{
+                display: none;
+            }
+            ul{
+                display: none;
+            }
+            ol{
+                display: inline-block;
+                width: 60px;
+            }
+            li{
+                border-top: 2px solid rebeccapurple;
+                border-bottom: 1px cadetblue;
+            }
+            h2{
+                display: inline-block;
+                color:rebeccapurple;
+            }
+        }*/
+    </style>
+</head>
+<body>
+    
+    <div class = "container">
+    <div class="header">
+       <ul>
+            <li>
+                Home
+            </li>
+            <li>
+                About Us
+            </li>
+            <li>
+                Our Products
+            </li>
+       </ul>
+       <input type="text" placeholder="Search">
+       <ol>
+           <li></li>
+           <li></li>
+           <li></li>
+       </ol>
+       <h2>Nova Mart</h2>
+    </div>
+    <div class="item1">
+        <img src="apple.jpeg" alt="">
+        <p>
+            Apple  : 5$ per kg
+        </p>
+        <pre>
+           
+        </pre>
+
+    </div>
+    <div class="item2">
+        <img src="banana.jpeg" alt="">
+        <p>
+            Banana :2$ per kg
+        </p>
+    </div>
+    <div class="item3">
+        <img src="orange.jpeg" alt="">
+        <p>
+           Orange :7$ per kg
+        </p>
+    </div>
+    <div class="item4">
+        <img src="graphes.jpeg" alt="">
+        <p>
+           Graphes:1$ per kg
+        </p>
+    </div>
+    <div class="item5">
+        <img src="watermelon.jpeg" alt="">
+        <p>
+            Water melon:2$ per kg
+        </p>
+    </div>
+    <div class="item6">
+        <img src="muskmelon.jpeg" alt="">
+        <p>
+            Musk melon:6$ per kg
+        </p>
+    </div>
+    <div class="footer">
+
+    </div>
+    </div>
+</body>
+</html>

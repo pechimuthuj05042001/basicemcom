@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Rahul{
+           display: grid;
+           margin-top: 100px;
+           grid-template: 50px 200px 200px 50px/repeat(10,1fr);
+          grid-template-areas: 
+          "H H H H H H H H H H"
+          "A A A A A B B B B B"
+          "C C C C C D D D D D"
+          "F F F F F F F F F F"
+          ;
+        }
+        .div1{
+            grid-area: H;
+            background-color: mediumspringgreen;
+        }
+        .div2{
+            grid-area: A;
+            background-color: cyan;
+        }
+        .div3{
+            grid-area: B;
+            background-color: violet;
+        }
+        .div4{
+            grid-area: C;
+            background-color: yellowgreen;
+        }
+        .div5{
+            grid-area: D;
+            background-color: palevioletred;
+        }
+        .div6{
+            grid-area: F;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="Rahul">
+        <div class="div1">
+            Header
+        </div>
+        <div class="div2">
+           A
+        </div>
+        <div class="div3">
+           B
+        </div>
+        <div class="div4">
+           C
+        </div>
+        <div class="div5">
+           D
+        </div>
+        <div class="div6">
+            Footer       
+        </div>
+    </div>
+</body>
+</html>
