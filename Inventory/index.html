@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <i class="fa fa-bars line" aria-hidden="true" onclick="myFunction()"> </i>
+        <h2>Our Cloud Will Manage Your Inventories</h2>
+        
+    </header>
+    <nav>
+        <ol>
+            <li>Home</li>
+            <li>Features</li>
+            <li>Price</li>
+            <li>Integeration</li>
+            <li>Demo</li>
+            
+        </ol>
+    </nav>
+    <nav class="navbar">
+        <ol id="nav">
+            <li id="Home">Home</li>
+            
+            <li id="Features">Features</li>
+            <li id="Price">Price</li>
+            <li id="Integeration">Integeration</li>
+            <li id="Demo">Demo</li>
+            
+        </ol>
+    </nav>
+<div class="Description">
+    <h1 class="h1">
+        Manage Your Inventories
+    </h1>
+    <h1 class="h2">
+        To Better Your Business
+    </h1>
+    <p>Brand new Inventory Manger Tool will help you in maintaining stock,<br>it will fulfil your customers</p>
+</div>
+
+<div">
+    <center>
+        <br>
+        <br>
+        <a href="" class="signup">  Sign Up for Free </a>
+        <br>
+        <a href="" class="login"> Already Having an account?</a>
+    </center>
+
+    
+    
+</div>
+
+<script>
+    var a = 0;
+    function myFunction(){
+        if(a==0){
+            document.getElementById("nav").style.display="block";
+            document.getElementById("Home").style.display="block";
+            document.getElementById("Features").style.display="block";
+            document.getElementById("Price").style.display="block";
+            document.getElementById("Integeration").style.display="block";
+            document.getElementById("Demo").style.display="block";
+            a=1;
+        }
+        else{
+            document.getElementById("nav").style.display="none";
+            document.getElementById("Home").style.display="none";
+            document.getElementById("Features").style.display="none";
+            document.getElementById("Price").style.display="none";
+            document.getElementById("Integeration").style.display="none";
+            document.getElementById("Demo").style.display="none";
+            a=0;
+        }
+    }
+</script>
+
+</body>
+</html>

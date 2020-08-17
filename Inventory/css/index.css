@@ -1,0 +1,171 @@
+
+header{
+    background-color: brown;
+    height: 60px;
+}
+
+header h2{
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+    font-size: 2vw;
+    
+}
+.Description .h1{
+    padding-top: 6%;
+    font-size: 3vw;
+    text-align: center;
+    color : brown;
+}
+
+.Description .h2{
+    
+    font-size: 2.5vw;
+    text-align: center;
+    color: chocolate;
+}
+header .line{
+    color: white;
+    float: right;
+    font-size: 45px;
+    display: none;
+}
+.Description p{
+    text-align: center;
+    color: darkgray;
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+nav ol{
+    list-style-type: none;
+    font-size: 20px;
+    color: brown;
+    float: right;
+    
+}
+nav li{
+    
+    display: inline-block;
+    padding-left: 40px;
+    
+}
+
+#nav ol{
+    
+    float: none;
+    padding-left: 0px;
+    display: none;
+}
+#nav li{
+    padding-left: 0px;
+    display: block;
+    border-bottom: 1px solid gray;
+    transition: background 2s;
+    display: none;
+}
+#nav li:hover{
+    background-color: brown;
+    color: white;
+}
+@media screen and (max-width: 1100px){
+    header h2{
+        font-size: 3vw;
+    }
+    nav ol{
+        
+        float: none;
+        padding-left: 0px;
+        display: none;
+    }
+    nav li{
+        padding-left: 0px;
+        display: block;
+        border-bottom: 1px solid gray;
+        transition: background 2s;
+        display: none;
+    }
+    nav li:hover{
+        background-color: brown;
+        color: white;
+    }
+    header .line{
+        float: right;
+        font-size: 45px;
+        display: block;
+    }
+    
+}
+
+@media screen and (max-width: 600px){
+    header h2{
+       font-size: 4vw;
+    }
+}
+
+.signup{
+    width: 400px;
+    height: 50px;
+    padding-top: 15px;
+    text-align: center;
+    background-color: darkolivegreen;
+    color: white;
+    text-decoration: none;
+    font-size: 36px;
+    display: block;
+    transition: 1.5s;
+}
+
+.signup:hover{
+    background-color: black;
+}
+.login{
+    width: 100%;
+    color: darkolivegreen;
+    font-size: 20px;
+    text-decoration: none;
+}
+@media screen and (max-width: 1100px){
+    .Description .h1{
+        font-size: 5vw;
+    }
+    .Description .h2{
+        font-size: 4.5vw;
+    }
+    .Description p{
+        text-align: center;
+        color: darkgray;
+        font-size: 2.5vw;
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .Description .h1{
+        font-size: 6vw;
+    }
+    .Description .h2{
+        font-size: 5.5vw;
+    }
+    .Description p{
+        text-align: center;
+        color: darkgray;
+        font-size: 3vw;
+        font-weight: bold;
+    }
+    .signup{
+        width: 300px;
+        height: 40px;
+        text-align: center;
+        background-color: darkolivegreen;
+        color: white;
+        text-decoration: none;
+        font-size: 26px;
+        display: block;
+    }
+    .login{
+        width: 100%;
+        color: darkolivegreen;
+        font-size: 15px;
+        text-decoration: none;
+    }
+}
